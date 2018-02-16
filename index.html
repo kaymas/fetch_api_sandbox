@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch Sandbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+    <nav class=" blue-grey darken-1">
+        <div class="nav-wrapper container">
+            <div class="brand-logo">Fetch API Sandbox</div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="section row">
+            <button id="getText" class="btn blue darken-2 col">Get Text</button>
+            <button id="getUsers" class="btn green lighten-1 col offset-s1">Get JSON</button>
+            <button id="getPosts" class="btn yellow darken-1 black-text col offset-s1">Get API data</button>        
+        </div>
+        <hr>
+        <div id="output"></div>
+        <form id="addPost" row>
+            <div class="input-field">
+                <input type="text" id="title" placeholder="Title">
+            </div>
+            <div class="input-field">
+                <textarea id="body" placeholder="Body"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn grey darken-2 ">
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
